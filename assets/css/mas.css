@@ -1,0 +1,33 @@
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    /* white-space: nowrap; */
+    display: flex;
+  }
+
+  .marquee {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    white-space: nowrap;
+  }
+
+  .marquee img {
+    max-width: 200px;
+    max-height: 100px;
+    /* margin-right: 20px; */
+  }
+  .marqueee img {
+    display: inline-block;
+    max-width: 200px;
+    max-height: 100px;
+    /* margin-right: 20px; */
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
